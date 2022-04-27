@@ -1,0 +1,92 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+img{
+  max-width: 100%;
+}
+.tartist-tiny-slider-wrap{
+  width: 100%;
+  padding: 0;
+}
+.tartist-tiny-slider .wrap{
+  display: inline-grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tartist-tiny-slider__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-size: 1.2em;
+  background-color: #2779a8;
+  color: #ffffff;
+}
+.tartist-tiny-slider__item:nth-child(2n+1){
+  background-color: #ffc40c;
+  color: #212121;
+}
+.tartist-tiny-slider__item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tns-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+.tns-nav button{
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 5px;
+  background-color: #dddddd;
+}
+.tns-nav button.tns-nav-active{
+  background-color:#2779a8;
+}
+
+@media (min-width: 800px){
+  .tartist-tiny-slider-wrap{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tartist-tiny-slider__item{
+    height: 450px;
+    font-size: 2em;
+  }
+  .tartist-tiny-slider[data-chunksize='1'] .wrap{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='2'] .wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='3'] .wrap{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='4'] .wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='5'] .wrap{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='6'] .wrap{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='7'] .wrap{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='8'] .wrap{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='9'] .wrap{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .tartist-tiny-slider[data-chunksize='10'] .wrap{
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}

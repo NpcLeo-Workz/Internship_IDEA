@@ -1,0 +1,26 @@
+Projectarchive:     Project_XXX_XXXX_NAME_PART2_PART3_PART4.png
+
+first XXX = project number
+second XXXX = Projectyear
+Name is split by _ after each word
+
+example:            Project_042_2015_Recognition_and_Added_value_of_Nonformal_Education
+
+project number= 042
+year = 2015
+name = Recognition and Added value of Nonformal Education
+
+---------------------------------------------------------------------------------------------
+
+UpcommingProject:   Upcomming_XXXXXXXX_XXXXXXXX_Location_NAME_PART2_PART3_PART4.png
+
+first XXXX = start date
+second XXXX = end date
+
+example:            Upcomming_20042022_27042022_Alzira_Test_Name_One.png       
+
+start date: 20/04/2022
+end date: 27/04/2022
+location: Alzira
+name: test name one
+

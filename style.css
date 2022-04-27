@@ -1,0 +1,420 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.main-header-bar{
+	/*Makes the background-color from the header blue*/
+	background-color: #101c85;
+}
+
+.site-header{
+	position: fixed; /*Make it stick to the top*/
+	width: 100%; /*Make sure it always takes up the full width of the screen*/
+}
+
+.custom-logo{
+	/*Makes the logo have the white background and rounded corners*/
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Header-menu
+--------------------------------------------------------------*/
+
+#primary-menu .sub-menu{
+	/*Makes the background-color of the submenu from the header blue*/
+	background-color: #101c85;
+}
+#primary-menu{
+	/*Makes the background-color of the menu from the header blue*/
+	background-color: #101c85;
+}
+
+.menu-toggle{
+	/*Makes the color of the Hamburger-menu-button white*/
+	color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+div .footer-adv-overlay{
+	/*Overwrites the padding settings of the footer*/
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.footer-adv-overlay .ast-container{
+	/*Overwrites the padding settings of the container in the footer*/
+	padding-left:35px;
+	padding-right: 35px;
+}
+div .ast-container{
+	/*Makes sure that the the division containers always fill the full width of the screen*/
+	margin: 0px;
+	max-width: 100% !important;	
+}
+
+div.astra-widget-social-profiles{
+	/*Removes the bottom margin on the the social icons widget in the footer*/
+	margin-bottom: 0px;
+}
+/*Removes the right margin from the last Social media Icon so it alligns nicely on the right of the screen*/
+#astra-widget-social-profiles-4 .astra-widget-social-profiles-inner li > a .youtube {
+    margin-right: 0px !important;
+}
+/*Overwrites the width of all the footerwidgets*/
+div .footer-adv-widget-1{
+	width: 15%;
+}
+div .footer-adv-widget-2{
+	width: 13%;
+}
+
+div .footer-adv-widget-3{
+	width: 32%;
+}
+
+div .footer-adv-widget-4{
+	width: 40%;
+	float: right;
+}
+/*fixes allignment issues from the last footerwidget(4)*/
+#astra-widget-social-profiles-4{
+	display: inline-block;
+	text-align: right;
+	width:100%;
+}
+#text-5{
+	display: inline-block;
+	text-align: right;
+	width:100%;
+}
+@media (max-width: 1060px){
+	div .footer-adv-widget-4{
+		max-width: 300px;
+	}
+}
+@media (max-width: 700px){
+	div.footer-adv-widget-1,
+	div.footer-adv-widget-2,
+	div.footer-adv-widget-3{
+		width: 33%;
+	}
+	div.footer-adv-widget-4{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+@media (max-width: 600px){
+	div.footer-adv-widget-1,
+	div.footer-adv-widget-2,
+	div.footer-adv-widget-3,
+	div.footer-adv-widget-4{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	#astra-widget-social-profiles-4, #text-5{
+		display: inline-block;
+		text-align: center;
+		width:100%;
+	}
+
+}
+@media (max-width: 415px){
+	#text-5{
+		width:230px;
+	}
+}
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+/*Fixes allignment issues from the startingview on the homescreen*/
+/*section[data-id= "c93436b"]{
+	margin-left: 10%;
+	margin-right: 0%;
+}
+div[data-id = "fe810fe"]{
+	margin-left: 10%;
+	max-width: 400px;
+}*/
+.elementor-button-wrapper a{
+	border: 1px solid #fff !important;
+}
+.elementor-button-wrapper a:hover{
+	border:1px solid #101c85 !important;
+}
+div[data-id= "a76220c"]{
+	padding-bottom: 2%;
+	width: 40% !important;
+	text-align: center;
+	margin-left:30%;
+}
+div[data-id="11c6e94"]{
+	padding-bottom: 2%;
+}
+
+/*Fixes margin issue from the custom div to explore projects*/
+div[data-id ="a7e3463"]{
+	margin-bottom: 0px !important;
+}
+@media (max-width: 970px){
+	div[data-id="11c6e94"] .elementor-widget-container .elementor-heading-title{
+		font-size: 48px !important;
+	}
+}
+@media(max-width: 850px){
+	section[data-id= "c93436b"]{
+		margin: 0px;
+	}
+	.elementor-14861 .elementor-element.elementor-element-9c38c85 .elementor-spacer-inner{
+		height: 25px;
+	}
+	.elementor-14861 .elementor-element.elementor-element-c544aea .elementor-spacer-inner{
+		height: 50px;
+	}
+	div[data-id= "a76220c"]{
+		padding-bottom: 5%;
+	}
+	div[data-id="315b22f"], div[data-id="f0c3701"]{
+		width:100% !important;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	div[data-id="fe810fe"]{
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-left: 0%;
+		text-align: center;
+	}
+	div[data-id="11c6e94"] .elementor-widget-container .elementor-heading-title{
+		font-size: 36px !important;
+	}
+}
+@media(max-width:425px){
+	div[data-id="11c6e94"] .elementor-widget-container .elementor-heading-title{
+		font-size: 23px !important;
+	}
+}
+/*--------------------------------------------------------------
+# Contact-form
+--------------------------------------------------------------*/
+
+/*Changes the textcolor of the labels in the form to blue*/
+.wpforms-field-label{
+	color: #101c85;
+}
+
+/*Overwrites the submitbutton layout*/
+#wpforms-submit-14983 {
+	background-color: #f7dc00;
+	color: #101c85;
+	font-family:'Roboto',sans-serif;
+	font-size: 23px;
+	font-weight: 700;
+	border-radius: 5px;
+	padding-left: 24px;
+	padding-bottom: 0px;
+	padding-right: 24px;
+	padding-top: 0px;
+}
+#wpforms-submit-14983:hover{
+	border: 1px solid #101c85;
+}
+
+/*Overwrites the width settings of the form*/
+.elementor-widget-wpforms{
+	max-width: 350px;
+}
+
+#wpforms-14983-field_1{
+	max-width: 100%;
+	border: none;
+}
+
+#wpforms-14983-field_2{
+	max-width: 100%;
+	border: none;
+}
+
+#wpforms-14983-field_3{
+	max-width: 100%;
+	border: none;
+}
+
+#wpforms-14983-field_4{
+	max-width: 100%;
+	border: none;
+}
+
+#wpforms-14983-field_4-container{
+	max-width: 100%;
+}
+
+/*Overwrites the coler setting of the required field icon*/
+div.wpforms-container-full .wpforms-form .wpforms-required-label
+{
+	color: #101c85;
+}
+
+/*Overwrites the background color of the textfields in the form*/
+#fff div.wpforms-container-full .wpforms-form input[type=date], 
+div.wpforms-container-full .wpforms-form input[type=datetime], 
+div.wpforms-container-full .wpforms-form input[type=datetime-local], 
+div.wpforms-container-full .wpforms-form input[type=email], 
+div.wpforms-container-full .wpforms-form input[type=month], 
+div.wpforms-container-full .wpforms-form input[type=number], 
+div.wpforms-container-full .wpforms-form input[type=password], 
+div.wpforms-container-full .wpforms-form input[type=range], 
+div.wpforms-container-full .wpforms-form input[type=search], 
+div.wpforms-container-full .wpforms-form input[type=tel], 
+div.wpforms-container-full .wpforms-form input[type=text], 
+div.wpforms-container-full .wpforms-form input[type=time], 
+div.wpforms-container-full .wpforms-form input[type=url], 
+div.wpforms-container-full .wpforms-form input[type=week], 
+div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea
+{
+    background-color:#A2B4D1;
+}
+/*--------------------------------------------------------------
+# Idea-carousel
+--------------------------------------------------------------*/
+
+/*Sets the custom size for the image carousel*/
+div .elementor-widget-image-carousel{
+    min-height: 200px;
+}
+div.elementor-image-carousel .swiper-slide .swiper-slide-inner .swiper-slide-image{
+	min-height: 200px;
+}
+
+/*--------------------------------------------------------------
+# European_Projects
+--------------------------------------------------------------*/
+div[data-id = "4f909cc"]{
+	margin-bottom: 0em !important;
+}
+
+/*--------------------------------------------------------------
+# Project_Archive-carousel
+--------------------------------------------------------------*/
+
+body img .tartist-tiny-slider-wrap{
+	width: 100%;
+	padding: 0;
+  }
+  .tartist-tiny-slider .wrap{
+	display: inline-grid !important;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+  }
+  
+  .tartist-tiny-slider__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+  }
+  .tartist-tiny-slider__item > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+  }
+  .tns-nav {
+	text-align: center;
+	margin-top: 30px;
+  }
+  .tns-nav button{
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	border: none;
+	margin: 0 5px;
+	background-color: #A2B4D1;
+  }
+  .tns-controls button[data-controls= "next"]{
+		float: right;
+  }
+  .tns-controls{
+	  margin: 10px;
+	  margin-left: 5%;
+	  margin-right: 5%;
+  }
+  .tns-nav button.tns-nav-active{
+	background-color:#101c85;
+  }
+  .tools{
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  .tools input{
+	  background-color:#A2B4D1;
+	  background: #A2B4D1;
+	  width: 40%;
+	  max-width: 320px;
+  }
+  .tools input[type=text]:focus{
+	background-color:#A2B4D1;
+  }
+  .tools button:hover,
+  .tools button:focus,
+  .tns-controls button:hover,
+  .tns-controls button:focus{
+	  color:#101c85 !important;
+  }
+  @media (max-width: 499px){
+	.tartist-tiny-slider__item{
+		height: 300px;	
+	}
+	.tartist-tiny-slider[data-chunksize='8'] .wrap{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.tools input{
+		width: 80%;
+	}
+  }
+  @media (min-width: 500px){
+	.tartist-tiny-slider__item{
+		height: 380px;	
+	}
+	.tartist-tiny-slider[data-chunksize='8'] .wrap{
+		grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  @media (min-width: 600px){
+	.tartist-tiny-slider__item{
+		height: 500px;
+	}
+	.tartist-tiny-slider[data-chunksize='8'] .wrap{
+		grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  @media (min-width: 715px){
+	.tartist-tiny-slider__item{
+		height: 400px;
+	}
+	.tartist-tiny-slider[data-chunksize='8'] .wrap{
+		grid-template-columns: repeat(3, 1fr);
+	}
+  }
+  @media (min-width: 900px){
+	.tartist-tiny-slider-wrap{
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	.tartist-tiny-slider__item{
+	  height: 360px;
+	}
+	.tartist-tiny-slider[data-chunksize='8'] .wrap{
+	  grid-template-columns: repeat(4, 1fr);
+	}
+  }
+
+
+
+
+
