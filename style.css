@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
+#content{
+		min-height: 90vh !important;
+	}
 .main-header-bar{
 	/*Makes the background-color from the header blue*/
 	background-color: #101c85;
@@ -413,6 +415,64 @@ body img .tartist-tiny-slider-wrap{
 	  grid-template-columns: repeat(4, 1fr);
 	}
   }
+
+/*--------------------------------------------------------------
+# Upcomming_Projects-carousel
+--------------------------------------------------------------*/
+.card a{
+	height: 100%;
+}
+.card {
+  border-radius: 15px;
+	background-color: #A2B4D1;
+  transition: 0.3s;
+	padding: 2%;
+}
+.card:hover {
+	cursor: pointer;
+}
+.card img{
+	
+  width: 100px;
+	display: inline-block;
+	float: left;
+}
+.container{
+	display: inline-block;
+	padding: 2px 16px;
+	color: #101c85;
+}
+.container h2{
+	color: #101c85;
+	font-size: 16px;
+}
+.container p{
+	margin-bottom: 0.5em;
+	font-size: 18px;
+	text-transform: none;
+}
+.fullslider .tartist-tiny-slider__item{
+	height: 200px;
+	
+}
+.fullslider .tartist-tiny-slider[data-chunksize='6'] .wrap{
+	grid-template-columns: repeat(1, 1fr);}
+.fullslider{
+	margin-top: 2%;
+}
+.fullslider .tns-item{
+	padding-right: 0 !important;
+}
+  
+  @media (min-width: 700px){
+	.fullslider .tartist-tiny-slider[data-chunksize='6'] .wrap{
+		grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  @media (min-width: 1100px){
+	.fullslider .tartist-tiny-slider[data-chunksize='6'] .wrap{
+	  grid-template-columns: repeat(3, 1fr);
+	}
 
 
 
