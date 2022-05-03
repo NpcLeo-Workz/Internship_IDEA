@@ -73,7 +73,7 @@ $allimages = getAllImgs(getAllDirs($directory, $directory_seperator));
   var Images = <?php echo json_encode($allimages); ?>;
 
 </script>
-<div class="tartist-tiny-slider-wrap">
+<div class="tartist-tiny-slider-wrap fullslider">
   <div class="tartist-tiny-slider" data-chunksize="6">
   </div>
 </div>
@@ -89,10 +89,11 @@ $allimages = getAllImgs(getAllDirs($directory, $directory_seperator));
   var elements = element.split("/");
   var elementinfo =(elements[elements.length -1]);
   var elementinfosplit = elementinfo.split("_");
-  var elementstartdate = elementinfosplit[1];
-  var elementenddate= elementinfosplit[2];
-  var elementlocation= elementinfosplit[3];
+  var elementstartdate = 'Startdate: '+ elementinfosplit[1].substring(0,2) + '/' + elementinfosplit[1].substring(2,4) + '/' + elementinfosplit[1].substring(4);
+  var elementenddate= 'Enddate: '+ elementinfosplit[2].substring(0,2) + '/' + elementinfosplit[2].substring(2,4) + '/' + elementinfosplit[2].substring(4);
+  var elementlocation= 'Location: '+ elementinfosplit[3];
   var elementname = "";
+  elementinfosplit[elementinfosplit.length -1]=elementinfosplit[elementinfosplit.length -1].replace('.png', '');
   for(i =4;i<elementinfosplit.length;i++){
       elementname+= elementinfosplit[i]+" ";
   }
@@ -115,18 +116,23 @@ $allimages = getAllImgs(getAllDirs($directory, $directory_seperator));
   var Projlocation = document.createElement('p');
   Projlocation.textContent = elementlocation;
   var Projstartdate = document.createElement('p');
-  Projectstartdate.textContent = elementstartdate;
+  Projstartdate.textContent = elementstartdate;
   var Projenddate = document.createElement('p');
   Projenddate.textContent = elementenddate;
 
   //making a card and adding the link and info to it
   var carddiv = document.createElement('div');
   carddiv.className = 'card';
+  var containerdiv = document.createElement('div');
+  containerdiv.className = 'container';
+  containerdiv.appendChild(ProjName);
+  containerdiv.appendChild(Projlocation);
+  containerdiv.appendChild(Projstartdate);
+  containerdiv.appendChild(Projenddate);
+  elementlink.appendChild(containerdiv);
   carddiv.appendChild(elementlink);
-  carddiv.appendChild(ProjName);
-  carddiv.appendChild(Projlocation);
-  carddiv.appendChild(Projstartdate);
-  carddiv.appendChild(Projenddate);
+  
+  
 
   var IDiv = document.createElement('div');
   IDiv.className = 'tartist-tiny-slider__item';
@@ -196,4 +202,6 @@ forEach(sliders, function (index, value) {
       navPosition: "bottom",
       nav: true,
   });
+}); 
 </script>
+</html>
