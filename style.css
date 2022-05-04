@@ -181,6 +181,8 @@ div[data-id ="a7e3463"]{
 	}
 	div[data-id= "a76220c"]{
 		padding-bottom: 5%;
+		margin-left: 20%;
+		width: 60% !important;
 	}
 	div[data-id="315b22f"], div[data-id="f0c3701"]{
 		width:100% !important;
@@ -196,6 +198,7 @@ div[data-id ="a7e3463"]{
 	div[data-id="11c6e94"] .elementor-widget-container .elementor-heading-title{
 		font-size: 36px !important;
 	}
+	
 }
 @media(max-width:425px){
 	div[data-id="11c6e94"] .elementor-widget-container .elementor-heading-title{
