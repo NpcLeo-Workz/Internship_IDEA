@@ -42,7 +42,7 @@ function getAllImgs($directory) {
         $check=explode('_',$filenameArray[5]);
         //echo($check[5]);
         
-        if(strcmp($check[0],'Upcomming')==0 && stripos($filenameArray[5], '-')== false){
+        if(strcmp($check[0],'Upcoming')==0 && stripos($filenameArray[5], '-')== false){
             array_push($resizedFilePath, $filename);
            // echo ('TRUE');
         //echo "<script>console.log('Debug Objects: " . $check[0] . "' );</script>";

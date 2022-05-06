@@ -145,16 +145,16 @@ div[data-id = "fe810fe"]{
 	max-width: 400px;
 }*/
 .elementor-button-wrapper a{
-	border: 1px solid #fff !important;
+	border: 1px solid transparent !important;
 }
 .elementor-button-wrapper a:hover{
 	border:1px solid #101c85 !important;
 }
 div[data-id= "a76220c"]{
 	padding-bottom: 2%;
-	width: 40% !important;
+	width: 60% !important;
 	text-align: center;
-	margin-left:30%;
+	margin-left:20%;
 }
 div[data-id="11c6e94"]{
 	padding-bottom: 2%;
@@ -437,7 +437,6 @@ body img .tartist-tiny-slider-wrap{
 .card img{
 	
   width: 100px;
-	display: inline-block;
 	float: left;
 }
 .container{
@@ -476,8 +475,4 @@ body img .tartist-tiny-slider-wrap{
 	.fullslider .tartist-tiny-slider[data-chunksize='6'] .wrap{
 	  grid-template-columns: repeat(3, 1fr);
 	}
-
-
-
-
-
+}
